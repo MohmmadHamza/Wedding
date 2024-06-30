@@ -8,8 +8,10 @@
     <meta name="author" content="wpOceans">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <title> Safina And Aftab</title>
+
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
     <link href="assets/css/flaticon.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/animate.css" rel="stylesheet">
@@ -29,6 +31,85 @@
 
 <body>
 
+    <style>
+        .preview-middle-items .preview-middle-img-wrap {
+            max-width: 570px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 11;
+            margin-top: 160px;
+        }
+         .preview-middle-items .preview-middle-img-wrap .preview-middle-img {
+text-align: center;
+position: relative;
+z-index: 1;
+}
+.preview-middle-items .preview-middle-img-wrap .preview-middle-img:before {
+position: absolute;
+left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+top: 0;
+width: 330px;
+height: 330px;
+background: #EEF4F6;
+border-radius: 50%;
+content: "";
+z-index: -1;
+}
+ .preview-middle-items .preview-middle-img-wrap .preview-middle-img .f-shape {
+position: absolute;
+left: 0;
+top: -120px;
+z-index: -1;
+-webkit-animation: circle2 60s linear infinite;
+animation: circle2 60s linear infinite;
+}
+ .preview-middle-items .preview-middle-img-wrap .preview-middle-img {
+text-align: center;
+position: relative;
+z-index: 1;
+}
+@media (max-width: 1199px) {
+  .preview-middle-items .preview-middle-img-wrap .preview-middle-img:before {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width: 575px) {
+     .preview-middle-items .preview-middle-img-wrap .preview-middle-img .f-shape {
+        top: -54px;
+        min-width: 400px;
+        /* left: -50px; */
+        left: -26px;
+    }
+}
+@media (max-width: 1199px) {
+     .preview-middle-items .preview-middle-img-wrap .preview-middle-img .f-shape {
+        /* top: -80px; */
+        top: -55px;
+    }
+}
+
+@media (max-width: 575px) {
+     .preview-middle-items .preview-middle-img-wrap {
+        max-width: 290px;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 1199px) {
+     .preview-middle-items .preview-middle-img-wrap {
+        font-size: 45px;
+        margin-top: 70px;
+        max-width: 450px;
+    }
+}
+@media (max-width: 1440px) {
+    .preview-middle-items .preview-middle-img-wrap {
+        margin-top: 100px;
+    }
+}
+    </style>
     <!-- start page-wrapper -->
     <div class="page-wrapper">
         <!-- start preloader -->
@@ -72,14 +153,7 @@
                                         <li class="menu-item-has-children">
                                             <a href="#">Home</a>
                                             <ul class="sub-menu">
-                                                <!-- <li><a href="index.html">Wedding Home 1</a></li>
-                                                <li><a href="index-2.html">Wedding Home 2</a></li>
-                                                <li><a href="index-3.html">Announcement Home 1</a></li>
-                                                <li><a href="index-4.html">Announcement Home 2</a></li>
-                                                <li><a href="index-5.html">Muslim Wedding Home</a></li>
-                                                <li><a class="active" href="index-6.html">Asian Wedding Home</a></li>
-                                                <li><a href="index-rtl.html">Muslim Wedding Home(RTL)</a></li> -->
-                                                <!-- <li><a href="invitation-1.html">Wedding Invitation 1</a></li> -->
+
                                                 <li><a href="invitation-2.html">Wedding Invitation</a></li>
                                                 <li class="menu-item-has-children">
                                                     <a href="#">Event Planner Homes</a>
@@ -215,15 +289,29 @@
                                         <div class="wpo-wedding-date wow fadeInUp" data-wow-duration="1700ms">
                                             <div class="clock-grids">
                                                 <div id="clock"></div>
-                                                
+
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
-                                <div class="col col-xl-6 col-lg-6 col-12">
+                                <!-- <div class="col col-xl-6 col-lg-6 col-12">
                                     <div class="wpo-hero-img">
                                         <img src="assets/images/slider/hero-6.jpg" alt="">
+                                    </div>
+                                </div> -->
+
+
+                                <div class="col-lg-6 col-md-12 col-12">
+                                    <div class="preview-middle-items">
+                                        <div class="preview-middle-img-wrap">
+                                            <div class="preview-middle-img wow zoomIn" data-wow-duration="1500ms"
+                                                style="visibility: visible; animation-duration: 1500ms; animation-name: zoomIn;">
+                                                <img src="assets/images/slider/middle.png" alt="">
+                                                <div class="f-shape"><img src="assets/images/slider/shape.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -275,7 +363,8 @@
                                     <div class="middle-couple-pic-inner">
                                         <img src="assets/images/couple/7.jpg" alt="">
                                     </div>
-                                    <div class="couple-shape"><img src="assets/images/couple/couple-shape2.png" alt=""></div>
+                                    <div class="couple-shape"><img src="assets/images/couple/couple-shape2.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -485,7 +574,7 @@
         </section>
         <!-- end of wpo-contact-section -->
 
-        
+
         <!-- start wpo-blog-section -->
         <section class="wpo-blog-section bg-white section-padding">
             <div class="container">
@@ -618,7 +707,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col col-xs-12">
-                            <p class="copyright"> &copy; Copyright 2023 | <a href="index.html">Safina & Aftab</a> | All right
+                            <p class="copyright"> &copy; Copyright 2023 | <a href="index.html">Safina & Aftab</a> | All
+                                right
                                 reserved.</p>
                         </div>
                     </div>
